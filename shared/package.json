@@ -1,0 +1,18 @@
+{
+  "name": "@purchase-automation/shared",
+  "version": "1.0.0",
+  "description": "Shared types and utilities",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

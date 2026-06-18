@@ -1,0 +1,21 @@
+{
+  "name": "purchase-automation",
+  "version": "1.0.0",
+  "description": "سیستم اتوماسیون مدیریت درخواست‌های خرید",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "database",
+    "shared"
+  ],
+  "scripts": {
+    "install-all": "npm install && npm install -w frontend && npm install -w backend && npm install -w database && npm install -w shared",
+    "dev": "npm run dev -w backend & npm run dev -w frontend",
+    "build": "npm run build -w frontend && npm run build -w backend",
+    "test": "npm run test -w frontend && npm run test -w backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
